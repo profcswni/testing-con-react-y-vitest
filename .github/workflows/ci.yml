@@ -30,7 +30,7 @@ jobs:
       - name: 📊 Subir los resultados a Codecov
         uses: codecov/codecov-action@v4
         with:
-          file: ./coverage/lcov.info  # Path to your coverage report file
+          file: ./coverage/lcov.info
           flags: unittests
           name: codecov-actions
       

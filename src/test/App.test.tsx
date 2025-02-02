@@ -1,7 +1,7 @@
 import { describe, test, it, expect } from 'vitest';
 import { render, fireEvent } from '@testing-library/react';
 
-import App from './App';
+import App from '../App';
 
 describe('Testing de App.tsx', () => {
     // Se puede usar test o it para describir el test
