@@ -13,34 +13,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📥 Descargar el código
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: 🔧 Configurar Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Install dependencies
+      - name: 📦 Instalar dependencias
         run: npm install
 
-      - name: Run tests with coverage
+      - name: 🧪 Correr tests con coverage
         run: npm run test -- --coverage
 
-      - name: Upload coverage to Codecov
+      - name: 📊 Subir los resultados a Codecov
         uses: codecov/codecov-action@v4
         with:
-          #token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/lcov.info  # Path to your coverage report file
           flags: unittests
           name: codecov-actions
-
-      - name: Upload coverage report (artifact)
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-report
-          path: coverage/
       
-      - name: Upload test results to Codecov
+      - name: 📋 Subir los detalles de los test a Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
