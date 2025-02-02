@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="10" failures="0" errors="0" time="0.0799763">
+    <testsuite name="src/App.test.tsx" timestamp="2025-02-02T03:01:33.221Z" hostname="LENOVOLEGION" tests="4" failures="0" errors="0" skipped="0" time="0.0759977">
+        <testcase classname="src/App.test.tsx" name="Testing de App.tsx &gt; componente renderizado correctamente" time="0.0471073">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="Testing de App.tsx &gt; Debe renderizar la palabra &quot;Vite&quot;" time="0.0160248">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="Testing de App.tsx &gt; Debe renderizar la palabar &quot;React&quot;" time="0.0038383">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="Testing de App.tsx &gt; Debe incrementar a 1 cuando se da clic al botón" time="0.0069913">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/js/division.test.js" timestamp="2025-02-02T03:01:33.223Z" hostname="LENOVOLEGION" tests="1" failures="0" errors="0" skipped="0" time="0.0013409">
+        <testcase classname="src/js/division.test.js" name="divide 10 /2 to equal 5" time="0.0008163">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/js/sum.test.js" timestamp="2025-02-02T03:01:33.224Z" hostname="LENOVOLEGION" tests="5" failures="0" errors="0" skipped="0" time="0.0026377">
+        <testcase classname="src/js/sum.test.js" name="Sumas &gt; adds 1 + 2 to equal 3" time="0.0008219">
+        </testcase>
+        <testcase classname="src/js/sum.test.js" name="Sumas &gt; sumar 5 + 10 no es 10" time="0.000505">
+        </testcase>
+        <testcase classname="src/js/sum.test.js" name="Sumas &gt; adds -1 + -1 to equal -2" time="0.0001756">
+        </testcase>
+        <testcase classname="src/js/sum.test.js" name="Sumas &gt; adds 0.1 + 0.2 to approximately equal 0.3" time="0.0002148">
+        </testcase>
+        <testcase classname="src/js/sum.test.js" name="Sumas &gt; Math ramdom return a number between 0 and 1" time="0.0002118">
+        </testcase>
+    </testsuite>
+</testsuites>
