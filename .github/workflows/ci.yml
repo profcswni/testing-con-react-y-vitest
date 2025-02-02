@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Cambia a la versión de Node.js que estés utilizando
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -27,8 +27,16 @@ jobs:
       - name: Run tests with coverage
         run: npm run test -- --coverage
 
-      - name: Upload coverage report
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          #token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage/lcov.info  # Path to your coverage report file
+          flags: unittests
+          name: codecov-actions
+
+      - name: Upload coverage report (artifact)
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
-          path: coverage/ # Asegúrate de que esta ruta coincida con la salida de tu informe de cobertura
+          path: coverage/
