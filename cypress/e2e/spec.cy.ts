@@ -1,13 +1,10 @@
 describe('Render aplication', () => {
   beforeEach(() => {
-    cy.visit('/')
+      cy.visit('/')
   })
 
   it('Load the application', () => {
-    cy.visit('/')
-    // Find some element
     cy.get('h1').should('be.visible')
-
   })
 
   // Fint the word Vite
