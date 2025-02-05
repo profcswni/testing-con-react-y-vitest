@@ -18,14 +18,15 @@
 
 ## Tecnologías utilizadas
 
-- React
-- Jest y plugins
-- Testing Library
-- Cypress
-- Vitest
-- Github Actions
-- Cypress Cloud
-- Codecov
+- React (para el frontend)
+- Jest y plugins (para pruebas unitarias)
+- React Testing Library (para pruebas unitarias)
+- Cypress (para pruebas E2E)
+- Vitest (para pruebas unitarias)
+- Github Actions (para CI/CD)
+- Cypress Cloud (para ver los resultados de las pruebas E2E)
+- Codecov (para cobertura de código)
+- Dotenv (para variables de entorno)
 
 # Tipos de Testing
 
