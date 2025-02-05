@@ -57,3 +57,4 @@ jobs:
           parallel: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
