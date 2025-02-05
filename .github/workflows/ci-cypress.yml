@@ -44,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1]
+        containers: ["cnt-1","cnt-2"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
