@@ -46,5 +46,15 @@ exports[`Testing de App.tsx > componente renderizado correctamente 1`] = `
   >
     Click on the Vite and React logos to learn more
   </p>
+  <p
+    class="read-the-docs"
+  >
+    <a
+      data-discover="true"
+      href="/about"
+    >
+      About
+    </a>
+  </p>
 </DocumentFragment>
 `;

@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`About Page > componente renderizado correctamente 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      About
+    </h1>
+    <p>
+      This is a simple example of a Vite + React application.
+    </p>
+    <p>
+      Estamos integrando React con Vite, vitest y react-testing-library.
+    </p>
+    <p>
+      <a
+        data-discover="true"
+        href="/"
+      >
+        Back to home
+      </a>
+    </p>
+  </div>
+</DocumentFragment>
+`;
