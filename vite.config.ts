@@ -5,14 +5,16 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+const env = loadEnv("", process.cwd(), "VITE_");
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     codecovVitePlugin({
-      enableBundleAnalysis: import.meta.env.VITE_CODECOV_TOKEN !== undefined,
+      enableBundleAnalysis: env.VITE_CODECOV_TOKEN !== undefined,
       bundleName: "testing-with-react",
-      uploadToken: import.meta.env.VITE_CODECOV_TOKEN,
+      uploadToken: env.VITE_CODECOV_TOKEN,
     }),
   ],
   
