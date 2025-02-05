@@ -1,7 +1,10 @@
 import { defineConfig } from "cypress";
+import { loadEnv } from "vite";
+
+const env = loadEnv("", process.cwd(), "VITE_");
 
 export default defineConfig({
-  projectId: "dmnp3d",
+  projectId: env.VITE_CYPRESS_PROJECT_ID,
   component: {
     devServer: {
       framework: "react",
